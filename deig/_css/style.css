@@ -1,0 +1,338 @@
+* {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto; /* centers the content to the center of page */
+  font-family: Trebuchet MS, Lucida Grande, freesans, Arial, verdana, tahoma,
+    serif;
+  font-size: 12px;
+  font-style: normal;
+  background-color: rgba(51, 51, 255, 0.9);
+  font-weight: normal;
+  color: #333333;
+  /* background: #f0f0f0; /*#e5e5e5;*/
+  /*opacity: 0.9; softener */
+  background-color: rgba(240, 240, 240, 0.2);
+}
+header {
+  background-color: rgba(255, 255, 36, 0.5);
+  font-size: 12px;
+  margin: 0.1% auto;
+  padding: 0.1% auto;
+}
+.heading {
+  font-size: 32px;
+}
+.header_hotline {
+  text-align: center;
+  padding: 2% 2% 1% 2%;
+  float: right;
+}
+
+img {
+  float: left;
+  height: 100%;
+  margin-left: 2px;
+}
+
+.clr {
+  margin: auto;
+}
+.main {
+  padding: 0 5px 5px 5px;
+}
+section {
+  background-color: #fefefe;
+  padding: 5px 5px 5px 15px;
+  margin: 0.5% 0% 0% 0.5%;
+}
+section ul li {
+  padding-left: 10%;
+}
+
+h1 {
+  text-align: center;
+  margin: 0.5% auto;
+  padding: 1% 0% 1% 0%;
+  width: 75%;
+  color: #2a2a99;
+}
+h2 {
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 0.5%;
+  color: #2a2a99;
+}
+/* Menu begin ***************************************************\
+	*  Want to add code for one additional level
+	*  Keep it simple & easy to read
+	\***************************************************************/
+nav {
+  width: 99%;
+  background-color: rgba(51, 51, 255, 0.9);
+  padding: 0 0;
+  float: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0.5% 0.5%;
+}
+/*  horizontal navbar  */
+.hnavbar {
+  list-style: none;
+  margin-bottom: 0;
+  float: left;
+  position: relative;
+  z-index: 5;
+}
+.hnavbar li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  position: relative;
+}
+.hnavbar a {
+  display: block;
+  padding: 5px;
+  color: #fffffe;
+  border: solid #2a2a99 0px;
+  border-radius: 15px;
+  background-color: #2a2a99;
+  text-decoration: none;
+  width: 97px;
+}
+.hnavbar a:hover {
+  text-decoration: none;
+  border: solid #0e0e0e 1px;
+}
+/*--- DROPDOWN ---*/
+.hnavbar ul {
+  list-style: none;
+  position: absolute;
+  left: -9999px;
+}
+.hnavbar ul li {
+  text-align: left;
+  padding-top: 0px;
+  float: none;
+}
+.hnavbar ul li a {
+  white-space: nowrap;
+  width: 220px;
+}
+.hnavbar li:hover ul {
+  left: 0;
+}
+.hnavbar li:hover a {
+  background: #2e2e2e;
+  text-decoration: none;
+}
+.hnavbar li:hover ul a {
+  text-decoration: none;
+}
+.hnavbar li:hover ul li a:hover {
+  color: #000;
+  background: #5c9acd;
+} /* hover color blue */
+.hnavbar li li ul {
+  margin: -30px 0 0 -219px; /* sm s reen -- margin: 10px 0 0 -130px;*/
+  visibility: hidden; /* visibility might create an issue with screen readers see  http://csswizardry.com/2011/02/creating-a-pure-css-dropdown-menu/
+		                              \*  left:-9999px; \* Hide off-screen when not needed (this is more accessible than display:none;) */
+}
+.hnavbar li li:hover ul {
+  visibility: visible;
+}
+/* End of menu **********************************************************/
+/** Recovery pamplets ***********************/
+.content_full {
+  /*	float: left;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0.5%;
+  width: 95%;
+  border-radius: 5px;
+  border: 2px solid #3333ff;
+  padding: 20px;
+  background: #fff;
+}
+.content_full > a {
+  width: 108px;
+  height: 250px;
+  margin: 0 2px 5px 0;
+}
+.content_list {
+  float: left;
+  margin: 0.5% 0.5%;
+  width: 95%;
+  border-radius: 5px;
+  border: 2px solid #3333ff;
+  padding: 20px;
+  background: #fff;
+}
+.content_list ul {
+  margin-left: 5%;
+}
+.footer {
+  /* background-color: #3333ff; */
+  background-color: rgba(51, 51, 255, 0.9);
+  text-align: center;
+  color: #fffffe;
+  padding: 0.2% 0% 0.2% 0;
+  margin-top: 0.5%;
+}
+aside {
+  float: right;
+}
+.foot {
+  text-align: right;
+}
+.events {
+  margin: 15px;
+  border-radius: 25px;
+  border: 2px solid #3333ff;
+  padding: 40px;
+  width: 65%;
+}
+.important {
+  margin: 15px;
+  border-radius: 25px;
+  border: 2px solid #a30b12;
+  padding: 40px;
+  width: 65%;
+}
+.zoomlist {
+  margin: 15px;
+  border-radius: 25px;
+  border: 2px solid #a30b12;
+  padding: 40px;
+  width: 85%;
+}
+.contacts {
+  margin: 0.5% auto;
+  border-radius: 25px;
+  border: 2px solid #3333ff;
+  padding: 20px;
+  width: 65%;
+}
+table,
+th,
+td {
+  font-size: 0.9em;
+  width: 275px;
+}
+tr:nth-child(odd) {
+  background-color: #ccc;
+}
+tr:nth-child(even) {
+  background-color: #eee;
+}
+.simple_box {
+  border-left: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px #999;
+  border-right: solid 1px #999;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 4px;
+  margin: 5px;
+}
+footer {
+  background-color: rgba(255, 255, 36, 0.5);
+  text-align: center;
+}
+.businessMeetings {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  border: 2px solid #3333ff;
+  padding: 20px;
+  width: 97%;
+}
+/* 480px -- 60rem just works */
+@media all and (max-width: 60rem) {
+  header,
+  nav,
+  .main,
+  .hnavbar,
+  .hnavbar li ul {
+    width: 100% !important;
+    display: block !important;
+    padding: 0 0% !important;
+    margin: 0 0 !important;
+    border: none;
+  }
+  header h1 {
+    font-size: 6px;
+    float: none;
+    text-align: center;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .main h1 {
+    float: none;
+    text-align: center;
+  }
+  .hnavbar li,
+  .hnavbar li ul li {
+    /* By making the width 100% it forces the menu items to be stacked. */
+    width: 100%;
+    text-align: center;
+    margin: 0 0;
+  }
+  /* height ?? */
+  .hnavbar li a {
+    padding: 2% 2% 5% 2%;
+    /* Added 2 lines to center */
+    width: 80%;
+    height: 0.25em;
+    margin: 0.5% auto;
+  }
+  .hnavbar li ul {
+    z-index: 10;
+  }
+  .hnavbar li li ul {
+    margin: 0 0 0 10px;
+  }
+  /*.hnavbar li aq , .hnavbar li ul li a{height:1em;}*/
+  img {
+    float: none;
+    display: none;
+    max-width: 99%;
+    margin: 0 auto;
+  }
+
+  .events {
+    border: 2px solid #3333ff;
+    width: 80%;
+  }
+  .businessMeetings {
+    display: block;
+    border: none;
+  }
+  .simple_box {
+    margin: 0 auto;
+  }
+  .contacts {
+    margin: 1.5% auto;
+    width: 80%;
+  }
+  /*Pamplets recovery */
+  .content_full {
+    border: none;
+    display: block;
+    z-index: 11;
+  }
+  /* The img display: none !importatnl above wipped this out! -- Removed !important */
+  .content_full img {
+    display: block;
+  }
+}
+
+/* end media quiery */

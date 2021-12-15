@@ -1,0 +1,10 @@
+<header id="heading">
+	<img src="_images/District_map_small.png">		
+	<div class="header_hotline"> 
+		<p style="font-weight:900;font-size:18px;color: orangered;">Want Help?<br/>
+		24-Hour Hotline<br/>
+		(207) 479-1779<br/>
+		</p>		
+	</div>
+	<h1>Welcome to<br/><span class="heading">Alcoholics Anonymous</span><br/>Downeast Intergroup -- Area 28</h1>				
+</header>

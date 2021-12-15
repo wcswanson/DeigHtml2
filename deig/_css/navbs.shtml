@@ -1,0 +1,70 @@
+<nav class="navbar navbar-dark bg-primary navbar-expand-sm">
+	<div class="container">
+		<!-- Logo -->
+		<a class="navbar-brand" href="index.html">DEIG</a>
+		<a class="navbar-brand" href="aa-meetings.html">AA Meetings</a>
+		<!-- hamburger menu -->
+		<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#deigMenu"
+			aria-controls="deigMenu"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="deigMenu">
+			<div class="navbar-nav">				
+				<!-- <a class="nav-item nav-link" href="aa-Events.html">AA Events</a> -->
+				<!-- Events -->
+				<!-- dropdown -->			
+				<div class="dropdown">
+					<a class="nav-item nav-link dropdown-toggle"
+					data-toggle="dropdown" id="aaEventsDropdown"
+					aria-hasp="true" aria-expanded="false"
+					href="#">aa Events</a>
+					<div class="dropdown-menu" aria-labelby="aaEventsDropdown">
+						<a class="dropdown-item" href="aa-Events-pdfs.html">AA Events pdf&#39;s</a>						
+						<a class="dropdown-item" href="aa-Events-Calendar.html">AA Events Calendar</a>
+					</div>
+				</div>
+				<!-- /Events -->
+				<a class="nav-item nav-link" href="NewsLetters.html">News Letters</a>
+				<!-- dropdown -->
+				<div class="dropdown">
+					<a class="nav-item nav-link dropdown-toggle"
+					data-toggle="dropdown" id="deigInfoDropdown"
+					aria-hasp="true" aria-expanded="false"
+					href="#">DEIG Information</a>
+					<div class="dropdown-menu" aria-labelby="deigInfoDropdown">
+						<a class="dropdown-item" href="AA-BusinessMeetings.html">Business Meetings</a>
+						<a class="dropdown-item" href="Contacts.html">Contacts</a>
+						<a class="dropdown-item" href="Financials.html">DEIG Financials</a>
+						<a class="dropdown-item" href="Minutes.html">DEIG Minutes</a>
+						<a class="dropdown-item" href="MeetingList.html">DEIG Meeting List</a>
+						<a class="dropdown-item" href="Website.html">DEIG Website</a>
+						<a class="dropdown-item" href="District-Information.html">District Information</a>
+					</div> 
+				</div>		
+			
+				<!-- dropdown -->			
+				<div class="dropdown">
+					<a class="nav-item nav-link dropdown-toggle"
+					data-toggle="dropdown" id="aaInfoDropdown"
+					aria-hasp="true" aria-expanded="false"
+					href="#">AA Information</a>
+					<div class="dropdown-menu" aria-labelby="aaInfoDropdown">
+						<a class="dropdown-item" href="aa-Information.html">aa Information</a>						
+					</div>
+				</div>
+				<!-- dropdown -->				
+				<div class="dropdown">
+						<a class="nav-item nav-link dropdown-toggle"
+						data-toggle="dropdown" id="OtherInfoDropdown"
+						aria-hasp="true" aria-expanded="false"
+						href="#">Other Resources</a>
+						<div class="dropdown-menu" aria-labelby="OtherInfoDropdown">
+								<a class="dropdown-item" href="Related-Websites.html">Related Websites</a>								
+						</div>
+				</div>	 
+				<a class="nav-item nav-link" href="About.html">About</a>
+		</div>
+	</div>
+</nav>
